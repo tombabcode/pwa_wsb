@@ -7,7 +7,6 @@ http.onreadystatechange = _ => {
 	if (http.readyState == 4) {
         if (http.status == 200) {
             var palette = JSON.parse(http.responseText).colors;
-            console.info(palette);
 
             // Otrzymujemy 5 kolorów
             for (let i = 1; i <= 5; i++) {
